@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express();
 require('dotenv').config();
 const url = process.env.MONGO_URL;
-const port = process.env.port;
+const port = process.env.PORT;
 app.use(express.json());
 app.use(cors())
 mongoose.connect(url)
